@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/mrizkifadil26/kirana-rizki.git",
   "author": "Muhammad Rizki Fadillah <mrizkifadil26@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
