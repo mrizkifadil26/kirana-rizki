@@ -6,14 +6,14 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/fonts/(.*)",
-            "dest": "api/fonts/$1"
+            "source": "/fonts/(.*)",
+            "destination": "/api/fonts/$1"
         },
         {
-            "src": "/(.*)",
-            "dest": "/api/index.js"
+            "source": "/(.*)",
+            "destination": "/api/index.js"
         }
     ]
 }
