@@ -5077,7 +5077,7 @@
                           class="wdp-name namatamu"
                           style="width: auto !important"
                         >
-                          <%= to =%>
+                          <h1 id="namaTamu">Tamu</h1>
                         </div>
 
                         <div class="wdp-button-wrapper" id="wdp-button-wrapper">
@@ -8506,6 +8506,11 @@
       src="https://inv.ts-invitation.com/wp-content/plugins/elkit/assets/js/wdp-swiper.min.js"
       id="wdp-swiper-js-js"
     ></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const to = urlParams.get('to') || 'Tamu';
+        document.getElementById('namaTamu').textContent = to;
+    </script>
     <script
       src="https://inv.ts-invitation.com/wp-content/plugins/elkit/assets/js/qr-code.js"
       id="weddingpress-qr-js"

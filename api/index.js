@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Set EJS as the template engine
-app.set('view engine', 'ejs');
-
 // Define a route
 app.get('/', (req, res) => {
-    const to = req.query.to || 'Tamu';
-    res.render('index', { to });
+    const to = req.query.to || 'World';
+    const filePath = path.join(__dirname, 'views', 'index.html');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            res.status(500).send(err);
+        } else {
+            res.sendFile(filePath);
+        }
+    });
 });
 
 // Start the server
