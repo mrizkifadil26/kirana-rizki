@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/fonts/(.*)",
-            "dest": "/api/fonts/$1"
+            "dest": "api/fonts/$1"
         },
         {
             "src": "/(.*)",
