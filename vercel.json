@@ -13,7 +13,7 @@
         },
         {
             "src": "/fonts/(.*)",
-            "dest": "/public/fonts/$1"
+            "dest": "/api/fonts/$1"
         }
     ]
 }
