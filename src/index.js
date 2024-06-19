@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 // Define a route
 app.get('/', (req, res) => {
-    const to = req.query.to || 'World';
+    const to = req.query.to || 'Tamu';
     res.render('index', { to });
 });
 
